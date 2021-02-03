@@ -249,6 +249,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			String name, @Nullable Class<T> requiredType, @Nullable Object[] args, boolean typeCheckOnly)
 			throws BeansException {
 
+		//获取完整注册的benaName
 		String beanName = transformedBeanName(name);
 		Object bean;
 
